@@ -452,7 +452,7 @@ li {
   @media (min-width: 320px) {
     .mobile-menu {
       min-width: 320px;
-      width: 100%; } }
+      width: auto; } }
   @media (min-width: 768px) {
     .mobile-menu {
       width: 320px; } }
@@ -953,14 +953,15 @@ li {
       color: #ff3e79;
       text-decoration: none; }
 
+a:hover .circle-button {
+  transform: scale(1.2); }
+
 .circle-button {
   padding: 0;
   border: none;
   width: 40px;
-  height: 40px; }
-  .circle-button:hover {
-    transform: scale(1.2);
-    transition-duration: 0.1s; }
+  height: 40px;
+  transition-duration: 0.1s; }
   .circle-button--none {
     display: none; }
   .circle-button--burger-img {
@@ -1040,10 +1041,20 @@ li {
   height: 32px;
   border: none;
   border-radius: 16px;
+  transition-duration: 0.1s;
   background: #ff3e79 url(./static/arroy-right.svg) no-repeat 90% center; }
   .form-button:hover {
-    transform: scale(0.9);
-    transition-duration: 0.1s; }
+    transform: scale(0.9); }
+
+body {
+  overflow-x: hidden; }
+
+.fixed_menu {
+  overflow: hidden;
+  position: fixed; }
+
+.block_none {
+  display: none; }
 
 
 /*# sourceMappingURL=style.css.map*/
