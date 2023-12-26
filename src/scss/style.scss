@@ -11,3 +11,16 @@
 @import './circle-button.scss';
 @import './read-more-button.scss';
 @import './form-button.scss';
+
+body {
+  overflow-x: hidden;
+}
+
+.fixed_menu {
+  overflow: hidden;
+  position: fixed;
+}
+
+.block_none {
+  display: none;
+}

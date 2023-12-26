@@ -55,29 +55,21 @@ let deleteSwiperClasses = (block, showPart) => {
 document.addEventListener('DOMContentLoaded', function () {
   let windowWidth = document.documentElement.clientWidth
   if (windowWidth < 768) {
-    console.log('Включаем свайпер при начальной ширине < 768')
     addSwiperClasses(brendsBlock, showPartBrends)
     addSwiperClasses(devicesBlock, showPartDevices)
     addSwiperClasses(priceListBlock, showPartPrices)
-
     swiperInit()
-  } else {
-    console.log('Начальная ширина > 768 Свайпер не нужен')
   }
 })
 
 window.addEventListener('resize', function () {
   let windowWidth = document.documentElement.clientWidth
-  console.log('Включаем свайпер при ресайзе')
   addSwiperClasses(brendsBlock, showPartBrends)
   addSwiperClasses(devicesBlock, showPartDevices)
   addSwiperClasses(priceListBlock)
-  let globalSwiper = swiperInit()
   if (windowWidth >= 768) {
     deleteSwiperClasses(brendsBlock, showPartBrends)
     deleteSwiperClasses(devicesBlock, showPartDevices)
     deleteSwiperClasses(priceListBlock, showPartPrices)
-
-    globalSwiper.destroy()
   }
 })

@@ -1,13 +1,13 @@
+a:hover .circle-button {
+  transform: scale(1.2);
+}
+
 .circle-button {
   padding: 0;
   border: none;
   width: 40px;
   height: 40px;
-
-  &:hover {
-    transform: scale(1.2);
-    transition-duration: 0.1s;
-  }
+  transition-duration: 0.1s;
 
   &--none {
     display: none;
