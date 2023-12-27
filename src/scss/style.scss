@@ -12,8 +12,9 @@
 @import './read-more-button.scss';
 @import './form-button.scss';
 
-body {
+.main-blocks-container {
   overflow-x: hidden;
+  width: auto;
 }
 
 .fixed_menu {
