@@ -414,12 +414,7 @@ li {
       top: 0px;
       box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
       display: grid;
-      grid-template-columns: 320px 1fr; }
-      .mobile-menu-block__mute-area {
-        grid-column: 2/3;
-        width: 100%;
-        max-width: 100%;
-        height: 100vh; } }
+      grid-template-columns: 320px 1fr; } }
   @media (min-width: 1440px) {
     .mobile-menu-block {
       width: 320px;
@@ -953,6 +948,7 @@ li {
       color: #ff3e79;
       text-decoration: none; }
 
+.circle-button:hover,
 a:hover .circle-button {
   transform: scale(1.2); }
 
