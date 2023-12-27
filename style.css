@@ -90,7 +90,7 @@ li {
 
 .main-container {
   background-color: #f8f8f8;
-  width: 100%;
+  width: auto;
   height: 100%; }
 
 .logo-side {
