@@ -27,12 +27,12 @@
       display: grid; //новое
       grid-template-columns: 320px 1fr;
 
-      &__mute-area {
-        grid-column: 2/3;
-        width: 100%;
-        max-width: 100%;
-        height: 100vh;
-      } //новое
+      // &__mute-area {
+      //   grid-column: 2/3;
+      //   width: 100%;
+      //   max-width: 100%;
+      //   height: 100vh;
+      // }
     }
   }
 
