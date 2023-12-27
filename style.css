@@ -1058,7 +1058,7 @@ body {
 
 @media (max-width: 320px) {
   body {
-    overflow-y: hidden; } }
+    overflow-x: hidden; } }
 
 
 /*# sourceMappingURL=style.css.map*/
